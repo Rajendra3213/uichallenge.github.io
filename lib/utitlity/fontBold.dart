@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 class FontBold extends StatelessWidget {
   final double size;
   final String text;
-  const FontBold({Key? key, required this.size, required this.text}) : super(key: key);
+  final Color color_;
+  const FontBold({Key? key, required this.size, required this.text,  required this.color_}) : super(key: key);
 
   @override
   Widget build(BuildContext context)  {
@@ -12,7 +13,8 @@ class FontBold extends StatelessWidget {
       style: TextStyle(
           fontFamily: 'Inter',
           fontSize: size,
-          fontWeight: FontWeight.w700
+          fontWeight: FontWeight.w700,
+        color: color_
       ),
     );
   }
